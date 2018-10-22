@@ -8,12 +8,12 @@ using namespace std;
 //argv - each argument word, stored in an array
 int main(int argc, char* argv[])
 {
-  
+
   if(argc != 2)
   {
-  
-    cout<<"Please specify one image file!\n"<<endl;        
-  
+
+    cout<<"Please specify one image file!\n"<<endl;
+
   }
 
   if(argc == 2)
@@ -27,14 +27,14 @@ int main(int argc, char* argv[])
 
     if(validBmp == false)
     {
-    
+
       cout<<"Image file must be a bitmap with 24-bit color depth.\n"<<endl;
-    
+
     }
 
     if(validBmp == true)
     {
-    
+
       vector <vector <Pixel> > imagePixels = image.toPixelMatrix();
 /*
       imagePixel.size
@@ -51,13 +51,13 @@ int main(int argc, char* argv[])
       {
         for(int column = 0; column < imagePixels[0].size(); column++)
         {
-        
+
         Pixel color;
         color = imagePixels [row][column];
         color.green = 0;
         color.blue = 0;
         color = imagePixels [row][column];
-        
+
         }
       }
 
@@ -70,3 +70,4 @@ int main(int argc, char* argv[])
 
   return 0;
 }
+                                                                                                                                                                                          72,1          Bot
